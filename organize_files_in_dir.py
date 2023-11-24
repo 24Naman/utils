@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-Python script which uses tkinter and os functions to organise files in seperate dir by their creation date
+Python script which uses tkinter and os functions to organise files 
+in seperate dir by their creation date
 """
 
 import os
@@ -41,7 +42,7 @@ def main():
 
         if not os.path.isfile(src_file_path):
             continue
-        
+
         creation_date = get_creation_date(src_file_path)
 
         destination_directory = os.path.join(src_dir, creation_date.strftime("%Y%m"))
