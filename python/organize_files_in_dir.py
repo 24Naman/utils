@@ -21,7 +21,7 @@ def get_creation_date(file_path: str) -> datetime:
     """
     Get creation for the file
     """
-    creation_time = os.path.getctime(file_path)
+    creation_time = os.path.getmtime(file_path)
     return datetime.fromtimestamp(creation_time)
 
 
